@@ -1,3 +1,225 @@
+Aqui está uma refatoração focada em aprofundar o tema visual com múltiplos tons de roxo (tons profundos para fundo, roxo neon/púrpura para destaques e contornos, e lavanda para o texto).
+
+Também foi adicionado um estilo visual dinâmico com CSS puro para representar o avatar/área de cada protagonista de forma consistente e estilizada, garantindo que a página permaneça limpa, sem erros de carregamento e no tema correto.
+1. index.html
+HTML
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJo's Bizarre Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>JoJo's Bizarre Adventure</h1>
+        <p>Explore as lendas da família Joestar por Hirohiko Araki</p>
+    </header>
+
+    <nav class="menu-partes">
+        <h2>Selecione uma Parte:</h2>
+        <div class="botoes-nav">
+            <button onclick="scrollToPart('parte1')">Parte 1</button>
+            <button onclick="scrollToPart('parte2')">Parte 2</button>
+            <button onclick="scrollToPart('parte3')">Parte 3</button>
+            <button onclick="scrollToPart('parte4')">Parte 4</button>
+            <button onclick="scrollToPart('parte5')">Parte 5</button>
+            <button onclick="scrollToPart('parte6')">Parte 6</button>
+            <button onclick="scrollToPart('parte7')">Parte 7</button>
+            <button onclick="scrollToPart('parte8')">Parte 8</button>
+            <button onclick="scrollToPart('parte9')">Parte 9</button>
+        </div>
+    </nav>
+
+    <main class="conteudo">
+
+        <section id="parte1" class="card-parte">
+            <h2>Parte 1: Phantom Blood</h2>
+            <p><strong>Protagonista:</strong> Jonathan Joestar</p>
+            <p class="descricao">
+                A história se passa na Inglaterra do final do século XIX e mostra o conflito entre o nobre Jonathan Joestar e seu irmão adotivo, Dio Brando, que usa uma Máscara de Pedra para se tornar um vampiro. Jonathan aprende a arte do Hamon para combatê-lo.
+            </p>
+            <div class="midia">
+                <div class="container-imagem">
+                    <div class="avatar-protagonista">
+                        <span class="manga-tag">PARTE 1</span>
+                        <span class="nome-protagonista">Jonathan Joestar</span>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <iframe src="https://www.youtube.com/embed/m_vux8N4tc8" title="Abertura Parte 1" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="parte2" class="card-parte">
+            <h2>Parte 2: Battle Tendency</h2>
+            <p><strong>Protagonista:</strong> Joseph Joestar</p>
+            <p class="descricao">
+                Nos anos 1930, o carismático e trapaceiro Joseph Joestar, neto de Jonathan, precisa enfrentar os Homens do Pilar, seres milenares criadores das Máscaras de Pedra que ameaçam a humanidade.
+            </p>
+            <div class="midia">
+                <div class="container-imagem">
+                    <div class="avatar-protagonista">
+                        <span class="manga-tag">PARTE 2</span>
+                        <span class="nome-protagonista">Joseph Joestar</span>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <iframe src="https://www.youtube.com/embed/OPA3A93f4sE" title="Abertura Parte 2" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="parte3" class="card-parte">
+            <h2>Parte 3: Stardust Crusaders</h2>
+            <p><strong>Protagonista:</strong> Jotaro Kujo</p>
+            <p class="descricao">
+                Em 1989, com o retorno de DIO, a mãe de Jotaro adoece devido à manifestação de seu Stand. Jotaro, Joseph e seus aliados viajam do Japão ao Egito para derrotar DIO e salvar a vida de Holly.
+            </p>
+            <div class="midia">
+                <div class="container-imagem">
+                    <div class="avatar-protagonista">
+                        <span class="manga-tag">PARTE 3</span>
+                        <span class="nome-protagonista">Jotaro Kujo</span>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <iframe src="https://www.youtube.com/embed/dxma33-911U" title="Abertura Parte 3" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="parte4" class="card-parte">
+            <h2>Parte 4: Diamond is Unbreakable</h2>
+            <p><strong>Protagonista:</strong> Josuke Higashikata</p>
+            <p class="descricao">
+                Na cidade interiorana de Morioh, em 1999, Josuke Higashikata e seus amigos usam seus Stands para investigar mistérios locais e caçar um serial killer que aterroriza a cidade.
+            </p>
+            <div class="midia">
+                <div class="container-imagem">
+                    <div class="avatar-protagonista">
+                        <span class="manga-tag">PARTE 4</span>
+                        <span class="nome-protagonista">Josuke Higashikata</span>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <iframe src="https://www.youtube.com/embed/oItKCgnlnKy" title="Abertura Parte 4" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="parte5" class="card-parte">
+            <h2>Parte 5: Golden Wind</h2>
+            <p><strong>Protagonista:</strong> Giorno Giovanna</p>
+            <p class="descricao">
+                Na Itália de 2001, Giorno Giovanna, filho de DIO (com o corpo de Jonathan), busca se tornar um "Gang-Star" para reformar a máfia Passione por dentro e parar o tráfico de drogas para crianças.
+            </p>
+            <div class="midia">
+                <div class="container-imagem">
+                    <div class="avatar-protagonista">
+                        <span class="manga-tag">PARTE 5</span>
+                        <span class="nome-protagonista">Giorno Giovanna</span>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <iframe src="https://www.youtube.com/embed/2MtOpB5LlUA" title="Abertura Parte 5" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="parte6" class="card-parte">
+            <h2>Parte 6: Stone Ocean</h2>
+            <p><strong>Protagonista:</strong> Jolyne Cujoh</p>
+            <p class="descricao">
+                Presa injustamente na penitenciária Green Dolphin Street na Flórida, Jolyne Cujoh, filha de Jotaro, precisa enfrentar uma conspiração orquestrada pelo Pe. Enrico Pucci, um leal seguidor de DIO.
+            </p>
+            <div class="midia">
+                <div class="container-imagem">
+                    <div class="avatar-protagonista">
+                        <span class="manga-tag">PARTE 6</span>
+                        <span class="nome-protagonista">Jolyne Cujoh</span>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <iframe src="https://www.youtube.com/embed/9G3Xg9y6Ntc" title="Abertura Parte 6" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="parte7" class="card-parte">
+            <h2>Parte 7: Steel Ball Run</h2>
+            <p><strong>Protagonista:</strong> Johnny Joestar</p>
+            <p class="descricao">
+                Em um universo alternativo nos EUA de 1890, Johnny Joestar, um ex-jóquei paraplégico, junta-se a Gyro Zeppeli em uma transcontinental corrida de cavalos que esconde um grande segredo místico.
+            </p>
+            <div class="midia">
+                <div class="container-imagem">
+                    <div class="avatar-protagonista">
+                        <span class="manga-tag">PARTE 7</span>
+                        <span class="nome-protagonista">Johnny Joestar</span>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <div class="no-video">Sem anime adaptado até o momento.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parte8" class="card-parte">
+            <h2>Parte 8: JoJolion</h2>
+            <p><strong>Protagonista:</strong> Josuke Higashikata (Gappy)</p>
+            <p class="descricao">
+                Após o terremoto de 2011 em Morioh (universo alternativo), um jovem amnésico surge nos escombros. Ele tenta descobrir sua verdadeira identidade enquanto investiga a fruta misteriosa Locacaca.
+            </p>
+            <div class="midia">
+                <div class="container-imagem">
+                    <div class="avatar-protagonista">
+                        <span class="manga-tag">PARTE 8</span>
+                        <span class="nome-protagonista">Josuke Higashikata (Gappy)</span>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <div class="no-video">Sem anime adaptado até o momento.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parte9" class="card-parte">
+            <h2>Parte 9: The JOJOLands</h2>
+            <p><strong>Protagonista:</strong> Jodio Joestar</p>
+            <p class="descricao">
+                Ambientada no Havaí dos dias atuais, a história segue Jodio Joestar, um jovem que busca ficar extremamente rico trabalhando no crime organizado ao lado de seu irmão Dragona.
+            </p>
+            <div class="midia">
+                <div class="container-imagem">
+                    <div class="avatar-protagonista">
+                        <span class="manga-tag">PARTE 9</span>
+                        <span class="nome-protagonista">Jodio Joestar</span>
+                    </div>
+                </div>
+                <div class="container-video">
+                    <div class="no-video">Sem anime adaptado até o momento.</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; JoJo's Bizarre Adventure - Obra criada por Hirohiko Araki</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+2. styles.css
+CSS
+
 /* Resete Básico */
 * {
     margin: 0;
@@ -6,11 +228,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fundo com tons de roxo */
+/* Fundo com tons profundos de roxo em gradiente */
 body {
-    background: linear-gradient(135deg, #1d0029 0%, #320042 50%, #12001a 100%);
+    background: radial-gradient(circle, #2d0043 0%, #170024 60%, #0c0013 100%);
     background-attachment: fixed;
-    color: #f1e6ff;
+    color: #f3e8ff;
     padding-bottom: 40px;
 }
 
@@ -18,21 +240,21 @@ body {
 header {
     text-align: center;
     padding: 40px 20px;
-    background-color: rgba(20, 0, 30, 0.8);
-    border-bottom: 3px solid #b026ff;
-    box-shadow: 0 4px 15px rgba(176, 38, 255, 0.3);
+    background-color: rgba(23, 0, 36, 0.95);
+    border-bottom: 3px solid #c084fc;
+    box-shadow: 0 4px 20px rgba(192, 132, 252, 0.4);
 }
 
 header h1 {
     font-size: 2.8rem;
-    color: #d170ff;
-    text-shadow: 2px 2px 8px #000;
+    color: #e9d5ff;
+    text-shadow: 0 0 10px #a855f7, 0 0 20px #7e22ce;
     margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.1rem;
-    color: #e2b3ff;
+    color: #c084fc;
 }
 
 /* Menu de Navegação */
@@ -40,16 +262,17 @@ header p {
     max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
-    background: rgba(45, 10, 65, 0.7);
+    background: rgba(45, 10, 65, 0.85);
     border-radius: 12px;
-    border: 1px solid #7b1fa2;
+    border: 2px solid #a855f7;
     text-align: center;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
 }
 
 .menu-partes h2 {
     margin-bottom: 15px;
     font-size: 1.3rem;
-    color: #ea80fc;
+    color: #f0abfc;
 }
 
 .botoes-nav {
@@ -60,9 +283,9 @@ header p {
 }
 
 .botoes-nav button {
-    background-color: #6a1b9a;
+    background-color: #581c87;
     color: #fff;
-    border: 1px solid #ab47bc;
+    border: 1px solid #c084fc;
     padding: 10px 16px;
     border-radius: 6px;
     cursor: pointer;
@@ -71,8 +294,8 @@ header p {
 }
 
 .botoes-nav button:hover {
-    background-color: #b026ff;
-    box-shadow: 0 0 10px #b026ff;
+    background-color: #a855f7;
+    box-shadow: 0 0 12px #d8b4fe;
     transform: translateY(-2px);
 }
 
@@ -85,18 +308,23 @@ header p {
 
 /* Cards das Partes */
 .card-parte {
-    background: rgba(28, 5, 41, 0.85);
-    border: 2px solid #6a1b9a;
+    background: rgba(28, 3, 41, 0.9);
+    border: 2px solid #7e22ce;
     border-radius: 12px;
     padding: 25px;
     margin-bottom: 40px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
     scroll-margin-top: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.card-parte:hover {
+    border-color: #c084fc;
 }
 
 .card-parte h2 {
-    color: #e1bee7;
-    border-bottom: 2px solid #ab47bc;
+    color: #f0abfc;
+    border-bottom: 2px solid #9333ea;
     padding-bottom: 8px;
     margin-bottom: 12px;
 }
@@ -107,7 +335,7 @@ header p {
 }
 
 .descricao {
-    color: #d1c4e9;
+    color: #e9d5ff;
     margin-bottom: 20px !important;
 }
 
@@ -129,20 +357,46 @@ header p {
     justify-content: center;
 }
 
-.container-imagem img {
+/* Bloco do Protagonista com Tema Roxo */
+.avatar-protagonista {
     width: 100%;
-    height: auto;
+    height: 225px;
+    background: linear-gradient(145deg, #3b0764, #1e0033);
+    border: 2px solid #a855f7;
     border-radius: 8px;
-    border: 2px solid #8e24aa;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: inset 0 0 15px rgba(168, 85, 247, 0.3);
+    text-align: center;
+}
+
+.manga-tag {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #d8b4fe;
+    background: rgba(126, 34, 206, 0.6);
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #c084fc;
+}
+
+.nome-protagonista {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f5d0fe;
+    text-shadow: 0 0 8px #a855f7;
 }
 
 .container-video iframe {
     width: 100%;
     height: 225px;
-    border: 2px solid #8e24aa;
+    border: 2px solid #a855f7;
     border-radius: 8px;
+    background: #000;
 }
 
 .no-video {
@@ -151,10 +405,10 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #12001a;
-    border: 2px dashed #6a1b9a;
+    background-color: #170024;
+    border: 2px dashed #7e22ce;
     border-radius: 8px;
-    color: #ab47bc;
+    color: #c084fc;
     font-style: italic;
     text-align: center;
     padding: 10px;
@@ -164,8 +418,9 @@ header p {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #0d0014;
-    color: #8e24aa;
+    background-color: #0c0013;
+    color: #a855f7;
+    border-top: 1px solid #581c87;
     margin-top: 40px;
 }
 
