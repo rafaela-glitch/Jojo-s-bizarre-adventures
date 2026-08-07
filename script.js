@@ -1,7 +1,4 @@
-/**
- * Realiza a rolagem suave até a parte selecionada pelo usuário
- * @param {string} partId - O ID da seção de destino
- */
+// Função para rolar suavemente até a parte selecionada no menu
 function scrollToPart(partId) {
     const element = document.getElementById(partId);
     if (element) {
