@@ -10,37 +10,40 @@
 
     <header>
         <h1>JoJo's Bizarre Adventure</h1>
-        <p>Explore o universo bizarro criado por Hirohiko Araki</p>
+        <p>Explore a trajetória das gerações da família Joestar criadas por Hirohiko Araki</p>
     </header>
 
-    <nav class="menu-partes">
-        <h2>Escolha uma Parte:</h2>
-        <div class="botoes-nav">
-            <button onclick="scrollToPart('parte1')">Parte 1</button>
-            <button onclick="scrollToPart('parte2')">Parte 2</button>
-            <button onclick="scrollToPart('parte3')">Parte 3</button>
-            <button onclick="scrollToPart('parte4')">Parte 4</button>
-            <button onclick="scrollToPart('parte5')">Parte 5</button>
-            <button onclick="scrollToPart('parte6')">Parte 6</button>
-            <button onclick="scrollToPart('parte7')">Parte 7</button>
-            <button onclick="scrollToPart('parte8')">Parte 8</button>
-            <button onclick="scrollToPart('parte9')">Parte 9</button>
+    <nav class="menu-navegacao">
+        <h2>Selecione uma Parte:</h2>
+        <div class="botoes-menu">
+            <button onclick="navegarPara('parte1')">Parte 1: Phantom Blood</button>
+            <button onclick="navegarPara('parte2')">Parte 2: Battle Tendency</button>
+            <button onclick="navegarPara('parte3')">Parte 3: Stardust Crusaders</button>
+            <button onclick="navegarPara('parte4')">Parte 4: Diamond is Unbreakable</button>
+            <button onclick="navegarPara('parte5')">Parte 5: Golden Wind</button>
+            <button onclick="navegarPara('parte6')">Parte 6: Stone Ocean</button>
+            <button onclick="navegarPara('parte7')">Parte 7: Steel Ball Run</button>
+            <button onclick="navegarPara('parte8')">Parte 8: JoJolion</button>
+            <button onclick="navegarPara('parte9')">Parte 9: The JOJOLands</button>
         </div>
     </nav>
 
-    <main class="conteudo">
+    <main class="container-partes">
 
         <section id="parte1" class="card-parte">
             <h2>Parte 1: Phantom Blood</h2>
-            <p><strong>Protagonista:</strong> Jonathan Joestar</p>
-            <p class="descricao">
-                A história se passa na Inglaterra do final do século XIX e mostra o conflito entre o nobre Jonathan Joestar e seu irmão adotivo, Dio Brando, que usa uma Máscara de Pedra para se tornar um vampiro. Jonathan aprende a arte do Hamon para combatê-lo.
-            </p>
-            <div class="midia">
-                <div class="container-imagem">
-                    <img src="https://via.placeholder.com/400x500?text=Jonathan+Joestar" alt="Jonathan Joestar">
+            <div class="detalhes">
+                <p><strong>Protagonista:</strong> Jonathan Joestar</p>
+                <p class="descricao">
+                    Inglaterra, final do século XIX. A vida do nobre Jonathan Joestar muda radicalmente com a chegada de seu irmão adotivo, Dio Brando. Após Dio usar a misteriosa Máscara de Pedra para se transformar em um vampiro, Jonathan aprende a milenar arte marcial do Hamon (Onda) para combater o mal e honrar seu legado.
+                </p>
+            </div>
+            <div class="midia-container">
+                <div class="bloco-imagem">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMDAxY2M0YzktN2M3ZC00MWQ3LWExNzgtYTBmYTY2NDk4Mjc3XkEyXkFqcGc@._V1_.jpg" alt="Jonathan Joestar">
+                    <span>Jonathan Joestar</span>
                 </div>
-                <div class="container-video">
+                <div class="bloco-video">
                     <iframe src="https://www.youtube.com/embed/m_vux8N4tc8" title="Abertura Parte 1" allowfullscreen></iframe>
                 </div>
             </div>
@@ -48,15 +51,18 @@
 
         <section id="parte2" class="card-parte">
             <h2>Parte 2: Battle Tendency</h2>
-            <p><strong>Protagonista:</strong> Joseph Joestar</p>
-            <p class="descricao">
-                Nos anos 1930, o carismático e trapaceiro Joseph Joestar, neto de Jonathan, precisa enfrentar os Homens do Pilar, seres milenares criadores das Máscaras de Pedra que ameaçam a humanidade.
-            </p>
-            <div class="midia">
-                <div class="container-imagem">
-                    <img src="https://via.placeholder.com/400x500?text=Joseph+Joestar" alt="Joseph Joestar">
+            <div class="detalhes">
+                <p><strong>Protagonista:</strong> Joseph Joestar</p>
+                <p class="descricao">
+                    Anos 1930. Joseph Joestar, neto astuto e irreverente de Jonathan, descobre a existência dos Homens do Pilar — seres milenares e criadores das Máscaras de Pedra que despertam de seu sono para dominar o mundo. Joseph viaja pela Europa aperfeiçoando seu Hamon para detê-los.
+                </p>
+            </div>
+            <div class="midia-container">
+                <div class="bloco-imagem">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjA1OTU5MTQyMl5BMl5BanBnXkFtZTgwMDUyMDM1MzE@._V1_.jpg" alt="Joseph Joestar">
+                    <span>Joseph Joestar</span>
                 </div>
-                <div class="container-video">
+                <div class="bloco-video">
                     <iframe src="https://www.youtube.com/embed/OPA3A93f4sE" title="Abertura Parte 2" allowfullscreen></iframe>
                 </div>
             </div>
@@ -64,15 +70,18 @@
 
         <section id="parte3" class="card-parte">
             <h2>Parte 3: Stardust Crusaders</h2>
-            <p><strong>Protagonista:</strong> Jotaro Kujo</p>
-            <p class="descricao">
-                Em 1989, com o retorno de DIO, a mãe de Jotaro adoece devido à manifestação de seu Stand. Jotaro, Joseph e seus aliados viajam do Japão ao Egito para derrotar DIO e salvar a vida de Holly.
-            </p>
-            <div class="midia">
-                <div class="container-imagem">
-                    <img src="https://via.placeholder.com/400x500?text=Jotaro+Kujo" alt="Jotaro Kujo">
+            <div class="detalhes">
+                <p><strong>Protagonista:</strong> Jotaro Kujo</p>
+                <p class="descricao">
+                    1989. O arqui-inimigo DIO desperta no fundo do oceano usando o corpo de Jonathan, o que desperta manifestações psíquicas chamadas "Stands" na linhagem Joestar. Quando a mãe de Jotaro adoece gravemente devido a essa força, Jotaro e seus aliados partem do Japão rumo ao Egito.
+                </p>
+            </div>
+            <div class="midia-container">
+                <div class="bloco-imagem">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYzA0M2YwYzUtYjM0NC00NWY2LWI3OWUtNWNmMWNhYjg4YTFmXkEyXkFqcGc@._V1_.jpg" alt="Jotaro Kujo">
+                    <span>Jotaro Kujo</span>
                 </div>
-                <div class="container-video">
+                <div class="bloco-video">
                     <iframe src="https://www.youtube.com/embed/dxma33-911U" title="Abertura Parte 3" allowfullscreen></iframe>
                 </div>
             </div>
@@ -80,31 +89,37 @@
 
         <section id="parte4" class="card-parte">
             <h2>Parte 4: Diamond is Unbreakable</h2>
-            <p><strong>Protagonista:</strong> Josuke Higashikata</p>
-            <p class="descricao">
-                Na cidade interiorana de Morioh, em 1999, Josuke Higashikata e seus amigos usam seus Stands para investigar mistérios locais e caçar um serial killer que aterroriza a cidade.
-            </p>
-            <div class="midia">
-                <div class="container-imagem">
-                    <img src="https://via.placeholder.com/400x500?text=Josuke+Higashikata" alt="Josuke Higashikata">
+            <div class="detalhes">
+                <p><strong>Protagonista:</strong> Josuke Higashikata</p>
+                <p class="descricao">
+                    1999. Na pacata cidade japonesa de Morioh, o jovem Josuke Higashikata (filho ilegítimo de Joseph) usa seu Stand "Crazy Diamond" para proteger sua cidade. Junto com seus amigos e Jotaro, eles investigam assassinatos misteriosos e o surgimento de novos usuários de Stand.
+                </p>
+            </div>
+            <div class="midia-container">
+                <div class="bloco-imagem">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMDNjMmRlY2ItMTA2MC00YTQ4LTgyOGUtYTNmN2UzZTlhYTFmXkEyXkFqcGc@._V1_.jpg" alt="Josuke Higashikata">
+                    <span>Josuke Higashikata</span>
                 </div>
-                <div class="container-video">
+                <div class="bloco-video">
                     <iframe src="https://www.youtube.com/embed/oItKCgnlnKy" title="Abertura Parte 4" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
 
         <section id="parte5" class="card-parte">
-            <h2>Parte 5: Golden Wind</h2>
-            <p><strong>Protagonista:</strong> Giorno Giovanna</p>
-            <p class="descricao">
-                Na Itália de 2001, Giorno Giovanna, filho de DIO (com o corpo de Jonathan), busca se tornar um "Gang-Star" para reformar a máfia Passione por dentro e parar o tráfico de drogas para crianças.
-            </p>
-            <div class="midia">
-                <div class="container-imagem">
-                    <img src="https://via.placeholder.com/400x500?text=Giorno+Giovanna" alt="Giorno Giovanna">
+            <h2>Parte 5: Golden Wind (Vento Aureo)</h2>
+            <div class="detalhes">
+                <p><strong>Protagonista:</strong> Giorno Giovanna</p>
+                <p class="descricao">
+                    2001, Itália. Giorno Giovanna, filho de DIO (com a genética de Jonathan), sonha em se tornar um "Gang-Star" para livrar as ruas de Nápoles do tráfico de drogas. Ao se juntar à máfia Passione, ele busca derrubar o misterioso chefe da organização.
+                </p>
+            </div>
+            <div class="midia-container">
+                <div class="bloco-imagem">
+                    <img src="https://m.media-amazon.com/images/M/MV5BN2RkOTk1ZTUtOTI3My00YjBhLWFiMmEtY2RhYWFlYmRkMWNmXkEyXkFqcGc@._V1_.jpg" alt="Giorno Giovanna">
+                    <span>Giorno Giovanna</span>
                 </div>
-                <div class="container-video">
+                <div class="bloco-video">
                     <iframe src="https://www.youtube.com/embed/2MtOpB5LlUA" title="Abertura Parte 5" allowfullscreen></iframe>
                 </div>
             </div>
@@ -112,15 +127,18 @@
 
         <section id="parte6" class="card-parte">
             <h2>Parte 6: Stone Ocean</h2>
-            <p><strong>Protagonista:</strong> Jolyne Cujoh</p>
-            <p class="descricao">
-                Presa injustamente na penitenciária Green Dolphin Street na Flórida, Jolyne Cujoh, filha de Jotaro, precisa enfrentar uma conspiração orquestrada pelo Pe. Enrico Pucci, um leal seguidor de DIO.
-            </p>
-            <div class="midia">
-                <div class="container-imagem">
-                    <img src="https://via.placeholder.com/400x500?text=Jolyne+Cujoh" alt="Jolyne Cujoh">
+            <div class="detalhes">
+                <p><strong>Protagonista:</strong> Jolyne Cujoh</p>
+                <p class="descricao">
+                    2011, Flórida. Jolyne Cujoh, filha de Jotaro Kujo, é incriminada por um acidente e enviada para a prisão de segurança máxima Green Dolphin Street. Lá, ela desperta o Stand "Stone Free" e descobre um plano elaborado pelo Padre Pucci para reescrever o universo.
+                </p>
+            </div>
+            <div class="midia-container">
+                <div class="bloco-imagem">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYzA2Mzc4NjQtZTdmZS00MDVhLTg4ZmUtYTYwNWMyNmRkOGZlXkEyXkFqcGc@._V1_.jpg" alt="Jolyne Cujoh">
+                    <span>Jolyne Cujoh</span>
                 </div>
-                <div class="container-video">
+                <div class="bloco-video">
                     <iframe src="https://www.youtube.com/embed/9G3Xg9y6Ntc" title="Abertura Parte 6" allowfullscreen></iframe>
                 </div>
             </div>
@@ -128,48 +146,66 @@
 
         <section id="parte7" class="card-parte">
             <h2>Parte 7: Steel Ball Run</h2>
-            <p><strong>Protagonista:</strong> Johnny Joestar</p>
-            <p class="descricao">
-                Em um universo alternativo nos EUA de 1890, Johnny Joestar, um ex-jóquei paraplégico, junta-se a Gyro Zeppeli em uma transcontinental corrida de cavalos que esconde um grande segredo místico.
-            </p>
-            <div class="midia">
-                <div class="container-imagem">
-                    <img src="https://via.placeholder.com/400x500?text=Johnny+Joestar" alt="Johnny Joestar">
+            <div class="detalhes">
+                <p><strong>Protagonista:</strong> Johnny Joestar</p>
+                <p class="descricao">
+                    1890 (Universo Alternativo). Johnny Joestar, um ex-jóquei paraplégico, participa de uma lendária corrida de cavalos de ponta a ponta nos EUA. Ao lado de Gyro Zeppeli, Johnny descobre que a corrida esconde uma busca pelas partes sagradas de um Cadáver Santo.
+                </p>
+            </div>
+            <div class="midia-container">
+                <div class="bloco-imagem">
+                    <img src="https://static.wikia.nocookie.net/jojo/images/a/a2/SBR_Chapter_2.png" alt="Johnny Joestar">
+                    <span>Johnny Joestar</span>
                 </div>
-                <div class="container-video">
-                    <div class="no-video">Sem anime adaptado até o momento.</div>
+                <div class="bloco-video">
+                    <div class="aviso-midia">
+                        <p>🎬 <strong>Trailer / Animação Promocional</strong></p>
+                        <p>(Parte do mangá ainda sem adaptação oficial em anime)</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="parte8" class="card-parte">
             <h2>Parte 8: JoJolion</h2>
-            <p><strong>Protagonista:</strong> Josuke Higashikata (Gappy)</p>
-            <p class="descricao">
-                Após o terremoto de 2011 em Morioh (universo alternativo), um jovem amnésico surge nos escombros. Ele tenta descobrir sua verdadeira identidade enquanto investiga a fruta misteriosa Locacaca.
-            </p>
-            <div class="midia">
-                <div class="container-imagem">
-                    <img src="https://via.placeholder.com/400x500?text=Josuke+Gappy" alt="Josuke Higashikata">
+            <div class="detalhes">
+                <p><strong>Protagonista:</strong> Josuke Higashikata (Gappy)</p>
+                <p class="descricao">
+                    Após o grande terremoto de 2011 em Morioh, um jovem com amnésia é encontrado sob a terra perto de estranhas estruturas chamadas "Olhos de Parede". Adotado pela família Higashikata, ele busca descobrir sua verdadeira identidade e a origem da fruta Locacaca.
+                </p>
+            </div>
+            <div class="midia-container">
+                <div class="bloco-imagem">
+                    <img src="https://static.wikia.nocookie.net/jojo/images/6/6b/Volume_104.jpg" alt="Josuke Higashikata JoJolion">
+                    <span>Josuke Higashikata (Gappy)</span>
                 </div>
-                <div class="container-video">
-                    <div class="no-video">Sem anime adaptado até o momento.</div>
+                <div class="bloco-video">
+                    <div class="aviso-midia">
+                        <p>🎬 <strong>Trailer / Animação Promocional</strong></p>
+                        <p>(Parte do mangá ainda sem adaptação oficial em anime)</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="parte9" class="card-parte">
             <h2>Parte 9: The JOJOLands</h2>
-            <p><strong>Protagonista:</strong> Jodio Joestar</p>
-            <p class="descricao">
-                Ambientada no Havaí dos dias atuais, a história segue Jodio Joestar, um jovem que busca ficar extremamente rico trabalhando no crime organizado ao lado de seu irmão Dragona.
-            </p>
-            <div class="midia">
-                <div class="container-imagem">
-                    <img src="https://via.placeholder.com/400x500?text=Jodio+Joestar" alt="Jodio Joestar">
+            <div class="detalhes">
+                <p><strong>Protagonista:</strong> Jodio Joestar</p>
+                <p class="descricao">
+                    Ambientada nos dias atuais no Havaí, a trama acompanha Jodio Joestar, um jovem adolescente de 15 anos que vive sob o lema de se tornar extremamente rico através de atividades no crime organizado ao lado de seu irmão Dragona.
+                </p>
+            </div>
+            <div class="midia-container">
+                <div class="bloco-imagem">
+                    <img src="https://static.wikia.nocookie.net/jojo/images/8/87/The_JOJOLands_Volume_1.png" alt="Jodio Joestar">
+                    <span>Jodio Joestar</span>
                 </div>
-                <div class="container-video">
-                    <div class="no-video">Sem anime adaptado até o momento.</div>
+                <div class="bloco-video">
+                    <div class="aviso-midia">
+                        <p>🎬 <strong>Trailer / Animação Promocional</strong></p>
+                        <p>(Fase atual do mangá de Hirohiko Araki)</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -177,7 +213,7 @@
     </main>
 
     <footer>
-        <p>&copy; JoJo's Bizarre Adventure - Obra criada por Hirohiko Araki</p>
+        <p>&copy; JoJo's Bizarre Adventure - Obra Original de Hirohiko Araki</p>
     </footer>
 
     <script src="script.js"></script>

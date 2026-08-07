@@ -1,10 +1,16 @@
-// Função para rolar suavemente até a parte selecionada no menu
-function scrollToPart(partId) {
-    const element = document.getElementById(partId);
-    if (element) {
-        element.scrollIntoView({
+/**
+ * Função para rolar suavemente até a seção correspondente quando clicada no menu
+ * @param {string} idParte - O ID da seção para onde a tela deve rolar
+ */
+function navegarPara(idParte) {
+    const elemento = document.getElementById(idParte);
+    
+    if (elemento) {
+        elemento.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
+    } else {
+        console.warn(`Elemento com ID '${idParte}' não foi encontrado.`);
     }
 }
