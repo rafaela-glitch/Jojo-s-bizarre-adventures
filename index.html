@@ -1,9 +1,3 @@
-Aqui está a versão do projeto com recursos livres de direitos autorais (royalty-free / Creative Commons / placeholders) para garantir que você possa usar, publicar e testar a página sem problemas de direitos autorais.
-
-Para as imagens e vídeos, foram utilizadas mídias de domínio público e licenciadas para uso livre (com comentários indicando onde colocar seus próprios arquivos, se desejar).
-1. HTML (index.html)
-HTML
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -16,21 +10,37 @@ HTML
 
     <header>
         <h1>JoJo's Bizarre Adventure</h1>
-        <p>Guia das Gerações e Aventuras Bizzarras</p>
+        <p>A Lendária Linhagem da Família Joestar através das Gerações</p>
     </header>
 
+    <section class="about-section">
+        <div class="about-container">
+            <h2>Sobre a Obra</h2>
+            <p>
+                <strong>JoJo's Bizarre Adventure</strong> é uma renomada série de mangá escrita e ilustrada por 
+                <strong>Hirohiko Araki</strong>, publicada desde 1987. A trama acompanha o destino épico e entrelaçado da 
+                família Joestar, cujos membros — apelidados pelo pseudônimo "JoJo" — enfrentam forças sobrenaturais e vilões ao longo dos séculos.
+            </p>
+            <p>
+                A obra é reconhecida mundialmente por suas poses icônicas, referências à cultura pop e musical, e pelo inovador 
+                sistema de combate espiritual conhecido como <strong>Stands</strong> (além da técnica ancestral do <strong>Hamon</strong>). 
+                Cada parte funciona como uma história independente, trazendo uma nova época, ambientação e protagonista.
+            </p>
+        </div>
+    </section>
+
     <nav class="nav-menu">
-        <h2>Selecione uma Parte:</h2>
+        <h2>Ir para uma Parte:</h2>
         <div class="nav-buttons">
-            <button onclick="scrollToSection('part1')">Parte 1</button>
-            <button onclick="scrollToSection('part2')">Parte 2</button>
-            <button onclick="scrollToSection('part3')">Parte 3</button>
-            <button onclick="scrollToSection('part4')">Parte 4</button>
-            <button onclick="scrollToSection('part5')">Parte 5</button>
-            <button onclick="scrollToSection('part6')">Parte 6</button>
-            <button onclick="scrollToSection('part7')">Parte 7</button>
-            <button onclick="scrollToSection('part8')">Parte 8</button>
-            <button onclick="scrollToSection('part9')">Parte 9</button>
+            <button onclick="scrollToPart('part1')">Parte 1</button>
+            <button onclick="scrollToPart('part2')">Parte 2</button>
+            <button onclick="scrollToPart('part3')">Parte 3</button>
+            <button onclick="scrollToPart('part4')">Parte 4</button>
+            <button onclick="scrollToPart('part5')">Parte 5</button>
+            <button onclick="scrollToPart('part6')">Parte 6</button>
+            <button onclick="scrollToPart('part7')">Parte 7</button>
+            <button onclick="scrollToPart('part8')">Parte 8</button>
+            <button onclick="scrollToPart('part9')">Parte 9</button>
         </div>
     </nav>
 
@@ -38,16 +48,18 @@ HTML
 
         <section id="part1" class="jojo-card">
             <h2>Parte 1: Phantom Blood</h2>
-            <p>Na Inglaterra do século XIX, Jonathan Joestar enfrenta seu irmão adotivo, Dio Brando, que usa a Máscara de Pedra para se tornar um vampiro. Para detê-lo, Jonathan aprende a arte do Hamon.</p>
-            <div class="media-container">
+            <p class="description">
+                Na Inglaterra vitoriana do século XIX, o nobre e cavalheiresco Jonathan Joestar entra em um conflito mortal contra seu irmão adotivo, Dio Brando. Após Dio usar uma misteriosa Máscara de Pedra para se tornar um vampiro, Jonathan aprende a técnica de energia solar chamada Hamon para combatê-lo.
+            </p>
+            <div class="media-grid">
                 <div class="media-box">
                     <h3>Protagonista: Jonathan Joestar</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Jonathan Joestar - Ilustração">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Ilustração de Jonathan Joestar">
                 </div>
                 <div class="media-box">
-                    <h3>Vídeo (Livre de Direitos)</h3>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Vídeo Demo Parte 1" allowfullscreen></iframe>
+                    <h3>Abertura: "Sono Chi no Sadame"</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/m_vux8N4lc4" title="JoJo Part 1 Opening" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -55,16 +67,18 @@ HTML
 
         <section id="part2" class="jojo-card">
             <h2>Parte 2: Battle Tendency</h2>
-            <p>Nos anos 1930, Joseph Joestar, neto de Jonathan, descobre o despertar dos "Homens do Pilar", seres milenares criadores das Máscaras de Pedra, e precisa aperfeiçoar seu Hamon para salvar o mundo.</p>
-            <div class="media-container">
+            <p class="description">
+                Nos anos 1930, Joseph Joestar, o astuto e sarcástico neto de Jonathan, descobre o despertar dos "Homens do Pilar": seres ancestrais imortais e criadores das Máscaras de Pedra. Joseph precisa dominar o Hamon para salvar a humanidade de uma ameaça global.
+            </p>
+            <div class="media-grid">
                 <div class="media-box">
                     <h3>Protagonista: Joseph Joestar</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Joseph Joestar - Ilustração">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Ilustração de Joseph Joestar">
                 </div>
                 <div class="media-box">
-                    <h3>Vídeo (Livre de Direitos)</h3>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Vídeo Demo Parte 2" allowfullscreen></iframe>
+                    <h3>Abertura: "Bloody Stream"</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/KnmH7qQ0AVM" title="JoJo Part 2 Opening" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -72,16 +86,18 @@ HTML
 
         <section id="part3" class="jojo-card">
             <h2>Parte 3: Stardust Crusaders</h2>
-            <p>Em 1989, com o retorno de DIO, surgem os "Stands". Jotaro Kujo viaja do Japão ao Egito com seus companheiros para derrotar DIO e salvar a vida de sua mãe.</p>
-            <div class="media-container">
+            <p class="description">
+                Em 1989, o retorno do antigo inimigo DIO desperta o surgimento dos "Stands" (manifestações espirituais da alma). Jotaro Kujo, neto de Joseph, parte em uma jornada do Japão ao Egito ao lado de seus aliados para derrotar DIO e salvar a vida de sua mãe.
+            </p>
+            <div class="media-grid">
                 <div class="media-box">
                     <h3>Protagonista: Jotaro Kujo</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Jotaro Kujo - Ilustração">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Ilustração de Jotaro Kujo">
                 </div>
                 <div class="media-box">
-                    <h3>Vídeo (Livre de Direitos)</h3>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Vídeo Demo Parte 3" allowfullscreen></iframe>
+                    <h3>Abertura: "Stand Proud"</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/RORD3l3GGl4" title="JoJo Part 3 Opening" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -89,33 +105,37 @@ HTML
 
         <section id="part4" class="jojo-card">
             <h2>Parte 4: Diamond is Unbreakable</h2>
-            <p>Na pacata cidade de Morioh em 1999, Josuke Higashikata usa seu Stand "Crazy Diamond" para investigar misteriosos assassinatos e conter perigosos usuários de Stand.</p>
-            <div class="media-container">
+            <p class="description">
+                Na pacata cidade litorânea de Morioh em 1999, Josuke Higashikata usa seu Stand "Crazy Diamond" para investigar misteriosos incidentes com novos usuários de Stand e caçar um perigoso assassino em série que ameaça a paz local.
+            </p>
+            <div class="media-grid">
                 <div class="media-box">
                     <h3>Protagonista: Josuke Higashikata</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Josuke Higashikata - Ilustração">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Ilustração de Josuke Higashikata">
                 </div>
                 <div class="media-box">
-                    <h3>Vídeo (Livre de Direitos)</h3>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Vídeo Demo Parte 4" allowfullscreen></iframe>
+                    <h3>Abertura: "Crazy Noisy Bizarre Town"</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/oIt3MaX2994" title="JoJo Part 4 Opening" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="part5" class="jojo-card">
-            <h2>Parte 5: Golden Wind</h2>
-            <p>Em 2001, na Itália, Giorno Giovanna se junta à máfia Passione para transformá-la por dentro e erradicar o tráfico de drogas, almejando se tornar um "Gang-Star".</p>
-            <div class="media-container">
+            <h2>Parte 5: Golden Wind (Vento Aureo)</h2>
+            <p class="description">
+                Na Itália de 2001, Giorno Giovanna almeja reformar a máfia Passione por dentro para acabar com o tráfico de drogas nas ruas. Ao lado da equipe de Bruno Bucciarati, Giorno luta para alcançar o topo e se tornar um "Gang-Star".
+            </p>
+            <div class="media-grid">
                 <div class="media-box">
                     <h3>Protagonista: Giorno Giovanna</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Giorno Giovanna - Ilustração">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Ilustração de Giorno Giovanna">
                 </div>
                 <div class="media-box">
-                    <h3>Vídeo (Livre de Direitos)</h3>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Vídeo Demo Parte 5" allowfullscreen></iframe>
+                    <h3>Abertura: "Fighting Gold"</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/O41P3b7dGNE" title="JoJo Part 5 Opening" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -123,16 +143,18 @@ HTML
 
         <section id="part6" class="jojo-card">
             <h2>Parte 6: Stone Ocean</h2>
-            <p>Em 2011, Jolyne Cujoh é presa injustamente na Flórida. Na prisão, ela descobre um plano orquestrado pelo Padre Pucci ligado ao antigo legado de DIO.</p>
-            <div class="media-container">
+            <p class="description">
+                Em 2011, na Flórida, Jolyne Cujoh (filha de Jotaro) é presa injustamente na Prisão Green Dolphin Street. Ela descobre uma conspiração orquestrada pelo Padre Enrico Pucci para cumprir a vontade final de DIO e reescrever o destino do universo.
+            </p>
+            <div class="media-grid">
                 <div class="media-box">
                     <h3>Protagonista: Jolyne Cujoh</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Jolyne Cujoh - Ilustração">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Ilustração de Jolyne Cujoh">
                 </div>
                 <div class="media-box">
-                    <h3>Vídeo (Livre de Direitos)</h3>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Vídeo Demo Parte 6" allowfullscreen></iframe>
+                    <h3>Abertura: "Stone Ocean"</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/9ms0X1A1X7A" title="JoJo Part 6 Opening" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -140,16 +162,18 @@ HTML
 
         <section id="part7" class="jojo-card">
             <h2>Parte 7: Steel Ball Run</h2>
-            <p>Num universo alternativo em 1890, Johnny Joestar e Gyro Zeppeli entram numa gigantesca corrida de cavalos de costa a costa nos EUA enquanto buscam relíquias sagradas.</p>
-            <div class="media-container">
+            <p class="description">
+                Em uma continuidade alternativa nos EUA de 1890, o ex-jóquei paraplégico Johnny Joestar se une ao misterioso Gyro Zeppeli em uma épica corrida de cavalos de costa a costa, descobrindo segredos sobre relíquias místicas durante o percurso.
+            </p>
+            <div class="media-grid">
                 <div class="media-box">
                     <h3>Protagonista: Johnny Joestar</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Johnny Joestar - Ilustração">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Ilustração de Johnny Joestar">
                 </div>
                 <div class="media-box">
-                    <h3>Vídeo (Livre de Direitos)</h3>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Vídeo Demo Parte 7" allowfullscreen></iframe>
+                    <h3>Vídeo / Teaser</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="JoJo Part 7 Trailer" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -157,16 +181,18 @@ HTML
 
         <section id="part8" class="jojo-card">
             <h2>Parte 8: JoJolion</h2>
-            <p>Na cidade de Morioh pós-terremoto, um jovem sem memória é encontrado nos "Olhos de Parede". Chamado de Josuke, ele investiga quem ele realmente é.</p>
-            <div class="media-container">
+            <p class="description">
+                Na cidade de Morioh após um terremoto devastador, um jovem amnésico é encontrado nos "Olhos de Parede". Recebendo o nome de Josuke, ele busca desvendar a verdade sobre sua identidade e a maldição da família Higashikata.
+            </p>
+            <div class="media-grid">
                 <div class="media-box">
                     <h3>Protagonista: Josuke Higashikata (JJL)</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Josuke Higashikata JJL - Ilustração">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Ilustração de Josuke JoJolion">
                 </div>
                 <div class="media-box">
-                    <h3>Vídeo (Livre de Direitos)</h3>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Vídeo Demo Parte 8" allowfullscreen></iframe>
+                    <h3>Vídeo / Teaser</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="JoJo Part 8 Trailer" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -174,16 +200,18 @@ HTML
 
         <section id="part9" class="jojo-card">
             <h2>Parte 9: The JOJOLANDS</h2>
-            <p>No Havaí contemporâneo, Jodio Joestar busca ascender financeiramente e conquistar um grande patrimônio através de missões arriscadas no crime organizado.</p>
-            <div class="media-container">
+            <p class="description">
+                No Havaí moderno, Jodio Joestar, um jovem de 15 anos detentor do Stand "November Rain", atua no crime organizado ao lado de seu grupo para alcançar grande riqueza e subir na hierarquia social.
+            </p>
+            <div class="media-grid">
                 <div class="media-box">
                     <h3>Protagonista: Jodio Joestar</h3>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Jodio Joestar - Ilustração">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Anime_Eye.svg/800px-Anime_Eye.svg.png" alt="Ilustração de Jodio Joestar">
                 </div>
                 <div class="media-box">
-                    <h3>Vídeo (Livre de Direitos)</h3>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="Vídeo Demo Parte 9" allowfullscreen></iframe>
+                    <h3>Vídeo / Teaser</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" title="JoJo Part 9 Trailer" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -192,7 +220,7 @@ HTML
     </main>
 
     <footer>
-        <p>&copy; JoJo's Bizarre Adventure - Guia Fan Site de Uso Livre</p>
+        <p>&copy; 2026 JoJo's Bizarre Adventure Fan Page. Obra criada por Hirohiko Araki.</p>
     </footer>
 
     <script src="script.js"></script>
