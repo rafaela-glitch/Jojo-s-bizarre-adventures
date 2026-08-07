@@ -1,16 +1,13 @@
 /**
- * Função para rolar suavemente até a seção correspondente quando clicada no menu
- * @param {string} idParte - O ID da seção para onde a tela deve rolar
+ * Função para navegação suave até a parte selecionada
+ * @param {string} id - O ID do elemento da seção para rolar
  */
-function navegarPara(idParte) {
-    const elemento = document.getElementById(idParte);
-    
+function irParaParte(id) {
+    const elemento = document.getElementById(id);
     if (elemento) {
         elemento.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
-    } else {
-        console.warn(`Elemento com ID '${idParte}' não foi encontrado.`);
     }
 }
